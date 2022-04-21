@@ -52,3 +52,15 @@ body {
   height: calc(100% / 7);
 }
 
+
+.square span {
+  display: none;
+}
+
+.square.clicked span {
+  display: block;
+}
+
+.clicked {
+  background-color: lightblue;
+}

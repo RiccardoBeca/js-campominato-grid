@@ -10,26 +10,34 @@ Quando l’utente clicca su ogni cella, la cella cliccata si colora di azzurro.
 
 */
 
+// costante che assegno al contenitore html
 const container = document.querySelector(".container");
 console.log(container);
 
-
-// inizio()
 // creo function di iniziazione
-function inizio() {
-  // creo ciclo for per creazione quadratini *100
-  for (let i = 0; i < 100; i++) {
+function inizio(num) {
+  // inizializzo il contenitore con stringa vuota
+  container.innerHTML = "";
+  // creo ciclo for per creazione quadratini *num
+  for (let i = 1; i <= num; i++) {
     console.log(i);
+    // assegno costante a funzione che genra quadratino
+    const quadratino = generateSquare(container, num);
+    quadratino.innerHTML = `<span>${i}</span>`;
+    //  usando addeventlistener e con una funzione vado a slezionare un solo quadratino usando this e aggiungendo una classe
+    quadratino.addEventListener("click", function(){
+      this.classList.add("clicked")
+    });
+    console.log(quadratino);
   }
 }
 
-
 // creo funzione per creare div quadratino 
 
-function generateSquare(target) {
+function generateSquare(target, num) {
   const  quadratino = document.createElement("div");
-  quadratino.className = "square square100";
-  console.log(quadratino);
+  // modifico nome classe necessario concatenando i nomi classe precedenti aggiungendo num.
+  quadratino.className = "square square" + num;
+  target.append(quadratino);
+  return quadratino;
 }
-
-generateSquare();
