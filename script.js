@@ -9,3 +9,27 @@ Quando l’utente clicca su ogni cella, la cella cliccata si colora di azzurro.
 
 
 */
+
+const container = document.querySelector(".container");
+console.log(container);
+
+
+// inizio()
+// creo function di iniziazione
+function inizio() {
+  // creo ciclo for per creazione quadratini *100
+  for (let i = 0; i < 100; i++) {
+    console.log(i);
+  }
+}
+
+
+// creo funzione per creare div quadratino 
+
+function generateSquare(target) {
+  const  quadratino = document.createElement("div");
+  quadratino.className = "square square100";
+  console.log(quadratino);
+}
+
+generateSquare();

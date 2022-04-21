@@ -34,6 +34,7 @@ body {
   justify-content: center;
   align-items: center;
   color: crimson;
+  border: 2px solid cornflowerblue;
 }
 
 .square.square100 {
