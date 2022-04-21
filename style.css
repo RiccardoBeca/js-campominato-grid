@@ -29,30 +29,25 @@ body {
   height: 500px;
 }
 
-.square100 {
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: crimson;
+}
+
+.square.square100 {
   width: calc(100% / 10);
   height: calc(100% / 10);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: crimson;
 }
 
-.square81 {
+.square.square81 {
   width: calc(100% / 9);
   height: calc(100% / 9);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: crimson;
 }
 
-.square49 {
+.square.square49 {
   width: calc(100% / 7);
   height: calc(100% / 7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: crimson;
 }
 
