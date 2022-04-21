@@ -9,9 +9,9 @@ body {
 }
 
 .debug {
-  border: 2px solid red;
-  background-color: rgba(red, red, red, 0.3);
+  border: 2px solid cornflowerblue;
 }
+
 .wrapper {
  display: flex;
  justify-content: center;
@@ -30,6 +30,29 @@ body {
 }
 
 .square100 {
-  width: calc(100% / 8);
-  height: calc(100% / 8);
+  width: calc(100% / 10);
+  height: calc(100% / 10);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: crimson;
 }
+
+.square81 {
+  width: calc(100% / 9);
+  height: calc(100% / 9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: crimson;
+}
+
+.square49 {
+  width: calc(100% / 7);
+  height: calc(100% / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: crimson;
+}
+
